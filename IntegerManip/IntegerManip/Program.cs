@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +18,35 @@ namespace IntegerManip
         //• Display the sum of the integers
         //• Display every number divisible by 3
         //• Quit
-        static void Main(string[] args)
+        public String EveryFifth()
         {
 
+            if (10 > numbers.size() && numbers.size() >= 5)
+            {
+                return numbers.get(4).toString();
+            }
+            if (15 > numbers.size() && numbers.size() >= 10)
+            {
+                return numbers.get(4).toString() +
+                        numbers.get(9).toString();
+            }
+            if (20 > numbers.size() && numbers.size() >= 15)
+            {
+                return numbers.get(4).toString() +
+                        numbers.get(9).toString() +
+                        numbers.get(14).toString();
+            }
+            if (numbers.size() == 20)
+            {
+                return numbers.get(4).toString() +
+                        numbers.get(9).toString() +
+                        numbers.get(14).toString() +
+                        numbers.get(19).toString();
+            }
+            else
+            {
+                return "No numbers available";
+            }
         }
     }
 }
