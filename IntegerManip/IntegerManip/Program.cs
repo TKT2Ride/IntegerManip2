@@ -22,25 +22,25 @@ namespace IntegerManip
         {
             if (10 > numbers.size() && numbers.size() >= 5)
             {
-                return numbers.get(4).toString();
+                return numbers.get(4).ToString();
             }
             if (15 > numbers.size() && numbers.size() >= 10)
             {
-                return numbers.get(4).toString() + "\n" +
-                        numbers.get(9).toString();
+                return numbers.get(4).ToString() + "\n" +
+                        numbers.get(9).ToString();
             }
             if (20 > numbers.size() && numbers.size() >= 15)
             {
-                return numbers.get(4).toString() + "\n" +
-                        numbers.get(9).toString() + "\n" +
-                        numbers.get(14).toString();
+                return numbers.get(4).ToString() + "\n" +
+                        numbers.get(9).ToString() + "\n" +
+                        numbers.get(14).ToString();
             }
             if (numbers.size() == 20)
             {
-                return numbers.get(4).toString() + "\n" +
-                        numbers.get(9).toString() + "\n" +
-                        numbers.get(14).toString() + "\n" +
-                        numbers.get(19).toString();
+                return numbers.get(4).ToString() + "\n" +
+                        numbers.get(9).ToString() + "\n" +
+                        numbers.get(14).ToString() + "\n" +
+                        numbers.get(19).ToString();
             }
             else
             {
