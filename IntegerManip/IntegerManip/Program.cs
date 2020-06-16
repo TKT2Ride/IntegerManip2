@@ -20,11 +20,11 @@ namespace IntegerManip
         public String DivisibleBy3()
         {
             String finish = "";
-            for (Integer i = 0; i < numbers.size(); i++)
+            for (int i = 0; i < numbers.size(); i++)
             {
                 if (i % 3 == 0)
                 {
-                    finish = finish + "\n" + i.toString();
+                    finish = finish + "\n" + i.ToString();
                 }
             }
             return finish;
