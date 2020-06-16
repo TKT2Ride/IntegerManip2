@@ -17,9 +17,17 @@ namespace IntegerManip
         //• Display the sum of the integers
         //• Display every number divisible by 3
         //• Quit
-        static void Main(string[] args)
+        public String DivisibleBy3()
         {
-
+            String finish = "";
+            for (Integer i = 0; i < numbers.size(); i++)
+            {
+                if (i % 3 == 0)
+                {
+                    finish = finish + "\n" + i.toString();
+                }
+            }
+            return finish;
         }
     }
 }
