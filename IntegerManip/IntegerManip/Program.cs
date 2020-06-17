@@ -20,22 +20,22 @@ namespace IntegerManip
         //• Quit
         public String EveryFifth()
         {
-            if (10 > numbers.size() && numbers.size() >= 5)
+            if (10 > numbers.Count && numbers.Count >= 5)
             {
                 return numbers.get(4).ToString();
             }
-            if (15 > numbers.size() && numbers.size() >= 10)
+            if (15 > numbers.Count && numbers.Count >= 10)
             {
                 return numbers.get(4).ToString() + "\n" +
                         numbers.get(9).ToString();
             }
-            if (20 > numbers.size() && numbers.size() >= 15)
+            if (20 > numbers.Count && numbers.Count >= 15)
             {
                 return numbers.get(4).ToString() + "\n" +
                         numbers.get(9).ToString() + "\n" +
                         numbers.get(14).ToString();
             }
-            if (numbers.size() == 20)
+            if (numbers.Count == 20)
             {
                 return numbers.get(4).ToString() + "\n" +
                         numbers.get(9).ToString() + "\n" +
