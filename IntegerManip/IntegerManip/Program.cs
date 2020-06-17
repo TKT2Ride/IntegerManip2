@@ -20,7 +20,7 @@ namespace IntegerManip
         public String DivisibleBy3()
         {
             String finish = "";
-            for (int i = 0; i < numbers.size(); i++)
+            for (int i = 0; i < numbers.Count; i++)
             {
                 if (i % 3 == 0)
                 {
