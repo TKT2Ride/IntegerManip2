@@ -19,15 +19,14 @@ namespace IntegerManip
         //• Quit
         public void evenNumbers()
         {
-            List<int> numbers = new List<int>();
 
             int counter = 0;
 
             while (counter < numbers.Count)
             {
-                if (numbers[counter] % 2 == 0)
+                if (numbers.ElementAt(counter) % 2 == 0)
                 {
-                    Console.Write(numbers[counter] % 2 == 0);
+                    Console.Write(numbers.ElementAt(counter) % 2 == 0);
                 }
 
                 counter++;
