@@ -20,11 +20,8 @@ namespace IntegerManip
         //• Display the sum of the integers
         //• Display every number divisible by 3
         //• Quit
-        static void Main(string[] args)
+        public void OddNumbers()
         {
-
-            
-
             
 
             for (int i = 0; i < numbers.Count; i++)
