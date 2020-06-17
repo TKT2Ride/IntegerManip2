@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace IntegerManip
 {
@@ -19,7 +21,17 @@ namespace IntegerManip
         //• Quit
         static void Main(string[] args)
         {
-
+            List<int> numbers = new List<int>();
+            int total = 0;
+            int cont = 1;
+            while (cont == 1 && total <= 20) {
+                Console.WriteLine("Enter a number.");
+                numbers.Add(Convert.ToInt32(Console.ReadLine()));
+                Console.WriteLine("Do you want to enter another number? If yes, enter 1. If no, enter 0.");
+                string input = Console.ReadLine();
+                cont = Convert.ToInt32(input);
+                total++;
+            }
         }
     }
 }
