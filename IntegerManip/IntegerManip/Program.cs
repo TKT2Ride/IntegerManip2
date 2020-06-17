@@ -17,9 +17,22 @@ namespace IntegerManip
         //• Display the sum of the integers
         //• Display every number divisible by 3
         //• Quit
-        static void Main(string[] args)
+        public void evenNumbers()
         {
+            List<int> numbers = new List<int>();
 
+            int counter = 0;
+
+            while (counter < numbers.Count)
+            {
+                if (numbers[counter] % 2 == 0)
+                {
+                    Console.Write(numbers[counter] % 2 == 0);
+                }
+
+                counter++;
+            }
+            
         }
     }
 }
